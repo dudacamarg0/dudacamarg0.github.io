@@ -1,39 +1,46 @@
 
-body {
-  font-family: Arial, sans-serif;
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 0 20px;
+body.estilo-banner {
+  margin: 0;
+  padding: 0;
+  background: url('imagens/banner.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: sans-serif;
+  color: white;
+}
+
+.titulo-site {
   text-align: center;
-  background-color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ffcc00;
+  padding: 30px 20px 0 20px;
+  text-shadow: 2px 2px 5px #000;
 }
+
+.imagem-fundo form {
+  background-color: white;
+  border-radius: 40px;
+  display: flex;
+  padding: 10px 20px;
+  margin: 40px auto;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
 input {
-  width: 70%;
-  padding: 8px;
-  margin-right: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 200px;
+  padding: 5px;
 }
+
 button {
-  padding: 8px 16px;
-  margin-top: 10px;
+  border: none;
+  background: none;
+  font-size: 18px;
   cursor: pointer;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-.logo-animada {
-  animation: aparecerZoom 1.5s ease forwards;
-  margin-bottom: 20px;
-}
-.logo-animada img {
-  width: 180px;
-  opacity: 0;
-  transform: scale(0.8);
-  animation: fadeZoom 1.5s ease-out forwards;
-}
-@keyframes fadeZoom {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
