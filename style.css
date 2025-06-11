@@ -14,29 +14,26 @@ input {
 }
 button {
   padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
 }
-.logo-container {
+img {
+  max-width: 100%;
+  height: auto;
+}
+.logo-animada {
+  animation: aparecerZoom 1.5s ease forwards;
   margin-bottom: 20px;
 }
-
-.logo-desenhada {
+.logo-animada img {
   width: 180px;
-  height: auto;
-  mask-image: url("imagens/logo-meta.png");
-  -webkit-mask-image: url("imagens/logo-meta.png");
-  mask-size: contain;
-  -webkit-mask-size: contain;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  background-color: #000000;
-  animation: desenhar 3s ease forwards;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeZoom 1.5s ease-out forwards;
 }
-
-@keyframes desenhar {
-  from {
-    background-position: 0 100%;
-  }
+@keyframes fadeZoom {
   to {
-    background-position: 0 0;
+    opacity: 1;
+    transform: scale(1);
   }
 }
