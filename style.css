@@ -1,0 +1,42 @@
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 8px;
+}
+button {
+  padding: 8px 16px;
+}
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-desenhada {
+  width: 180px;
+  height: auto;
+  mask-image: url("imagens/logo-meta.png");
+  -webkit-mask-image: url("imagens/logo-meta.png");
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background-color: #000000;
+  animation: desenhar 3s ease forwards;
+}
+
+@keyframes desenhar {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
