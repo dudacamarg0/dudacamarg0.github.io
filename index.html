@@ -7,13 +7,15 @@
   <title>Consulta de Documentos</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="estilo-banner">
-  <div class="imagem-fundo">
-    <form onsubmit="pesquisarDocumento(); return false;">
-      <input id="campo-pesquisa" type="text" placeholder="Ex: CRLV" />
-      <button type="submit">🔍</button>
-    </form>
+<body>
+  <div class="logo-animada">
+    <img src="imagens/logo-meta.png" alt="Logo Meta">
   </div>
+
+  <h1>Consulta de Documentos</h1>
+  <input id="campo-pesquisa" type="text" placeholder="Ex: CRLV" />
+  <button onclick="pesquisarDocumento()">Buscar</button>
+
   <script src="script.js"></script>
 </body>
 </html>
