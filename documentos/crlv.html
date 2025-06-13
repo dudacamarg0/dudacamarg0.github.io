@@ -4,47 +4,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CRLV - Detalhes</title>
+  <title>CRLV - Certificado de Registro</title>
   <link rel="stylesheet" href="../style.css" />
   <style>
-    .doc-container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #333;
     }
-    .doc-container img {
-      width: 100%;
-      margin-top: 20px;
-      border-radius: 4px;
+    .doc-container {
+      max-width: 900px;
+      margin: 60px auto;
+      background: white;
+      border-radius: 8px;
+      padding: 40px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
     }
     .doc-container h2 {
+      margin-top: 0;
       color: #005baa;
     }
-    .doc-container a {
-      display: inline-block;
+    .info-section {
+      margin: 20px 0;
+      padding: 20px;
+      border-left: 5px solid #005baa;
+      background: #f9fbfd;
+    }
+    .info-section h3 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #005baa;
+    }
+    .info-section p {
+      margin: 8px 0 0 0;
+      font-size: 16px;
+    }
+    .doc-image {
       margin-top: 30px;
-      padding: 10px 15px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      width: 100%;
+    }
+    .btn-voltar {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
       background: #005baa;
-      color: #fff;
+      color: white;
       text-decoration: none;
       border-radius: 4px;
+    }
+    .btn-voltar:hover {
+      background: #003d80;
     }
   </style>
 </head>
 <body>
   <div class="doc-container">
     <h2>CRLV – Certificado de Registro e Licenciamento de Veículo</h2>
-    <p><strong>O que é:</strong> Documento que comprova o licenciamento de um veículo perante os órgãos de trânsito.</p>
-    <p><strong>Serve para:</strong> Cadastro de bem móvel (veículo) no Sicoob.</p>
-    <p><strong>Validade:</strong> Deve ser do ano vigente.</p>
-    <p><strong>Aceito se:</strong> Documento em nome do cooperado, com dados legíveis e atualizados.</p>
-    <p><strong>Reprovar se:</strong> Documento vencido ou com informações inconsistentes.</p>
-    <p><strong>Observações:</strong> Conferir se os dados do proprietário estão corretos. Documento de sócio não serve para PJ e vice-versa.</p>
-    <img src="../imagens/exemplo-crlv.png" alt="Exemplo de CRLV">
-    <a href="../index.html">🔙 Voltar para a página inicial</a>
+
+    <div class="info-section">
+      <h3>O que é</h3>
+      <p>Documento que comprova o licenciamento de um veículo perante os órgãos de trânsito.</p>
+    </div>
+
+    <div class="info-section">
+      <h3>Pra que serve</h3>
+      <p>Utilizado para cadastro de bem móvel (veículo) no Sicoob.</p>
+    </div>
+
+    <div class="info-section">
+      <h3>Aceitamos se</h3>
+      <p>Documento estiver em nome do cooperado, com dados legíveis, atualizados e do ano vigente.</p>
+    </div>
+
+    <div class="info-section">
+      <h3>Reprovamos se</h3>
+      <p>Documento vencido, com informações inconsistentes ou em nome de terceiro/sócio usado em PJ ou PF de forma incorreta.</p>
+    </div>
+
+    <div class="info-section">
+      <h3>Importante</h3>
+      <p>Conferir se os dados do proprietário estão de acordo. Documento de sócio não pode ser usado para PJ, e vice-versa.</p>
+    </div>
+
+    <img class="doc-image" src="../imagens/exemplo-crlv.png" alt="Exemplo do documento CRLV">
+
+    <a class="btn-voltar" href="../index.html">Voltar para a página inicial</a>
   </div>
 </body>
 </html>
