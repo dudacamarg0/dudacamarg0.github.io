@@ -2,80 +2,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CRLV – Certificado de Registro e Licenciamento de Veículo</title>
-  <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRLV - Detalhes</title>
+  <link rel="stylesheet" href="../style.css" />
   <style>
-    body {
-      padding: 20px;
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      color: #333;
-      line-height: 1.6;
-    }
-    .container {
+    .doc-container {
       max-width: 800px;
-      margin: auto;
-      background: white;
+      margin: 40px auto;
+      background: #fff;
       padding: 30px;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-    h2 {
-      text-align: center;
+    .doc-container img {
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 4px;
+    }
+    .doc-container h2 {
       color: #005baa;
     }
-    a.button {
+    .doc-container a {
       display: inline-block;
       margin-top: 30px;
       padding: 10px 15px;
-      background-color: #005baa;
-      color: white;
+      background: #005baa;
+      color: #fff;
       text-decoration: none;
       border-radius: 4px;
-    }
-    a.button:hover {
-      background-color: #003d80;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="doc-container">
     <h2>CRLV – Certificado de Registro e Licenciamento de Veículo</h2>
-    <p><strong>O que é:</strong><br>
-    Documento que comprova o licenciamento de um veículo perante os órgãos de trânsito.</p>
-
-    <p><strong>Serve para:</strong><br>
-    Cadastro de bem móvel (veículo) no Sicoob.</p>
-
-    <p><strong>Validade:</strong><br>
-    Deve ser do ano vigente. Para veículos adquiridos recentemente, atentar à data de emissão.</p>
-
-    <p><strong>Aceito se:</strong><br>
-    – Está em nome do cooperado.<br>
-    – Chassi e placa visíveis.<br>
-    – Documento oficial (digital ou físico com layout padrão do DETRAN).</p>
-
-    <p><strong>Reprovar se:</strong><br>
-    – Documento vencido.<br>
-    – Em nome de outra pessoa (sem contrato de compra e venda).<br>
-    – Está anexado junto com a tabela FIPE (devem ser enviados separadamente).</p>
-
-    <p><strong>Observações importantes:</strong><br>
-    – Não utilizar documento com 'Placa Anterior'.<br>
-    – Se estiver em processo de aquisição:<br>
-    • Valor deve estar zerado.<br>
-    • Campo 'Processo de aquisição' no SISbr deve estar marcado como SIM.</p>
-
-    <p><strong>Adicionalmente:</strong><br>
-    – A validade do documento deve estar atual.<br>
-    – É necessário conferir se os dados do proprietário estão de acordo.<br>
-    – Não aceitamos documento de sócio para cadastro na PJ, nem o inverso.</p>
-
-    <a href="../Resumo_Site_CRLV_Sicoob.pdf" class="button" download>📥 Baixar resumo em PDF</a>
-    <br><br>
-    <a href="../index.html" class="button">🔙 Voltar para a página inicial</a>
+    <p><strong>O que é:</strong> Documento que comprova o licenciamento de um veículo perante os órgãos de trânsito.</p>
+    <p><strong>Serve para:</strong> Cadastro de bem móvel (veículo) no Sicoob.</p>
+    <p><strong>Validade:</strong> Deve ser do ano vigente.</p>
+    <p><strong>Aceito se:</strong> Documento em nome do cooperado, com dados legíveis e atualizados.</p>
+    <p><strong>Reprovar se:</strong> Documento vencido ou com informações inconsistentes.</p>
+    <p><strong>Observações:</strong> Conferir se os dados do proprietário estão corretos. Documento de sócio não serve para PJ e vice-versa.</p>
+    <img src="../imagens/exemplo-crlv.png" alt="Exemplo de CRLV">
+    <a href="../index.html">🔙 Voltar para a página inicial</a>
   </div>
 </body>
 </html>

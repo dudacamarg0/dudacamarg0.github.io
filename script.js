@@ -8,6 +8,6 @@ function pesquisarDocumento() {
   if (redirect[input]) {
     window.location.href = redirect[input];
   } else {
-    alert("Documento não encontrado 🙂");
+    alert("Documento não encontrado.");
   }
 }
