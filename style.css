@@ -4,6 +4,9 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f6f9;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 header {
   background-color: #ffffff;
@@ -14,11 +17,13 @@ header {
 .logo {
   max-width: 160px;
 }
-.search-page {
+main.search-page {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 80px 20px;
+  text-align: center;
 }
 h1 {
   font-size: 28px;
@@ -26,6 +31,7 @@ h1 {
 }
 .search-wrapper {
   display: flex;
+  justify-content: center;
 }
 input {
   padding: 12px;
